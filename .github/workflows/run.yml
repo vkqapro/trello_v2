@@ -1,0 +1,16 @@
+name: My UI Testing
+on: push
+jobs:
+  ui-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout gh-pages repository to GitHub runner
+        uses: actions/cjeckout@v4
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+      - name: Build docker container
+        run: |
+          docker compose build
