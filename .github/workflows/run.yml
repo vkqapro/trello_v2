@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Checkout gh-pages repository to GitHub runner
-        uses: actions/cjeckout@v4
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: ./.github/gh-pages
