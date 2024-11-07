@@ -1,7 +1,7 @@
 name: E2E Testing
 on:
   schedule:
-    - cron: "/5 * * * *"
+    - crontab: "5,20,35,50 * * * *"
 
 jobs:
   e2e-testing:
