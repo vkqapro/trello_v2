@@ -6,3 +6,4 @@ COPY ./ /automation
 WORKDIR /automation
 
 RUN python3 -m pip install .
+RUN python3 setup.py develop
