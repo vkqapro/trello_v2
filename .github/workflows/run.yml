@@ -1,5 +1,7 @@
 name: E2E Testing
-on: push
+on:
+  schedule:
+    - cron: "*/2 * * * *"
 
 jobs:
   e2e-testing:

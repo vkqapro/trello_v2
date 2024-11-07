@@ -1,13 +1,15 @@
 import pytest
 import logging as log
-from src.helpers.requestAPI import API_Call
+from tests.Base_Test import Base_Test
 
 
-@pytest.mark.hc
-def test_healthcheck():
-    log.info('Hello World!!')
-    log.info('Hello World!!')
-    r = API_Call()
-    r = r.get_call()
-    log.info("+" * 100)
-    log.info(r.json())
+class Test_E2E(Base_Test):
+
+    @pytest.mark.hc
+    def test_healthcheck(self):
+        log.info('Hello World!!')
+        log.info('Hello World!!')
+        result = self.API.get_call()
+
+        log.info("==" * 30)
+        log.info(result.json())
