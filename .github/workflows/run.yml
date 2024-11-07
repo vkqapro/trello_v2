@@ -1,7 +1,7 @@
 name: E2E Testing
 on:
   schedule:
-    - cron: "5,20,45,50 * * * *"
+    - cron: "10 * * * *"
 
 
 jobs:
