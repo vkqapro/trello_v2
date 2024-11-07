@@ -1,7 +1,7 @@
 name: E2E Testing
 on:
   schedule:
-  - cron: "1 * * * *"
+  - cron: "/1 * * * *"
 
 jobs:
   e2e-testing:
