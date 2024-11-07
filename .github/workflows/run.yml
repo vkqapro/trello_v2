@@ -1,20 +1,15 @@
-name: My UI Testing
+name: E2E Testing
 on: push
+
 jobs:
-  ui-testing:
+  e2e-testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Checkout gh-pages repository to GitHub runner
+      - name: Check out
         uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: ./.github/gh-pages
-
       - name: Build docker container
         run: |
           docker compose build
-
-      - name: Run docker compose
+      - name: Run the container
         run: |
           docker compose up
