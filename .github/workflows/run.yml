@@ -1,8 +1,5 @@
-name: E2E Testing
-on:
-  schedule:
-    - cron: "10 * * * *"
-
+name: E2E Health-Check
+on: push
 
 jobs:
   e2e-testing:
@@ -10,9 +7,9 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v4
-      - name: Build docker container
+      - name: Docker Compose build
         run: |
           docker compose build
-      - name: Run the container
+      - name: Docker compose build
         run: |
           docker compose up

@@ -1,15 +1,16 @@
+from  tests.Base_Test import BaseTest
+
 import pytest
 import logging as log
-from tests.Base_Test import Base_Test
 
-
-class Test_E2E(Base_Test):
-
+class TestHC(BaseTest):
     @pytest.mark.hc
-    def test_healthcheck(self):
-        log.info('Hello World!!')
-        log.info('Hello World!!')
-        result = self.API.get_call()
+    def test_hc(self):
+        request = self.API
+        log.info('Hello World')
+        log.info('=' * 50)
+        log.info(request.GET().status_code)
+        log.info('=' * 50)
+        log.info(request.GET().json())
 
-        log.info("==" * 30)
-        log.info(result.json())
+
