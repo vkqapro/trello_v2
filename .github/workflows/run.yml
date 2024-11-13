@@ -1,15 +1,15 @@
-name: E2E Health-Check
+name: Framework Health Check Test
 on: push
-
 jobs:
-  e2e-testing:
+  Health_check:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Docker Compose build
+
+      - name: Build Docker
         run: |
           docker compose build
-      - name: Docker compose build
+      - name: Run Docker
         run: |
           docker compose up

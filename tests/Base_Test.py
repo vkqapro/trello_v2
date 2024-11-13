@@ -1,10 +1,10 @@
-from src.helpers.requestAPI import API_Calls
-
 import pytest
 
-class BaseTest:
-    API: API_Calls
+from src.helpers.requestAPI import Api_Calls
 
+class BaseTest:
+    API: Api_Calls
     @pytest.fixture(autouse=True)
     def setup(self, request):
-        request.cls.API = API_Calls()
+        request.cls.API = Api_Calls()
+
