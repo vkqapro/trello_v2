@@ -1,6 +1,6 @@
 services:
   E2E:
-    image: python:3.8-alpine
+    image: python:3.8-buster
     build:
       context: .
       dockerfile: Dockerfile
