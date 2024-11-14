@@ -8,8 +8,7 @@ jobs:
 #        image: selenium/standalone-chrome
     steps:
       - name: Checkout
-        uses: Xotabu4/selenoid-github-actions@v2
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Build Docker
         run: |
