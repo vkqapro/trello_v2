@@ -6,5 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pytest -m hc"
+    command: /bin/sh -c "ls -ls && pytest --version && pytest -m login"
     working_dir: /automation

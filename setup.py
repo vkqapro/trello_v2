@@ -9,6 +9,7 @@ setup(
         'allure-pytest==2.13.5',
         'pytest==8.3.3',
         'requests==2.32.3',
-        'setuptools==75.3.0'
+        'setuptools==75.3.0',
+        'selenium==4.26.1'
     ]
 )

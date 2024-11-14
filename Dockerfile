@@ -5,5 +5,6 @@ RUN mkdir "/automation"
 COPY ./ /automation
 WORKDIR /automation
 
+RUN python3 setup.py install
 RUN python3 -m pip install .
 
