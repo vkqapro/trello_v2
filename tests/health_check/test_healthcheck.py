@@ -3,9 +3,8 @@ from tests.Base_Test import BaseTest
 import pytest
 import logging as log
 import time
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+
 
 class TestHC(BaseTest):
     @pytest.mark.hc
