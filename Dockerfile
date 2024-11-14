@@ -28,8 +28,8 @@ RUN CHROME_VERSION=$(google-chrome-stable --version | awk '{ print $3 }' | awk -
   && ln -s /usr/local/bin/chromedriver/chromedriver /usr/bin/chromedriver
 
 # Set Paths for Chromedriver and Google Chrome
-ENV PATH "/usr/local/bin/chromedriver:$PATH"
-ENV PATH "/usr/bin/google-chrome:$PATH"
+#ENV PATH "/usr/local/bin/chromedriver:$PATH"
+#ENV PATH "/usr/bin/google-chrome:$PATH"
 
 
 
