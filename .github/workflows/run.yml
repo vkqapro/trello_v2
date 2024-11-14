@@ -2,10 +2,7 @@ name: Framework Health Check Test
 on: push
 jobs:
   Health_check:
-    runs-on: macos-latest
-#    services:
-#      selenium:
-#        image: selenium/standalone-chrome
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
