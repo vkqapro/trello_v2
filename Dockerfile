@@ -1,5 +1,14 @@
 FROM python:3.12.0-alpine3.18
 
+# Update apk repositories
+RUN apk update
+
+# Install dependencies
+RUN apk add --no-cache \
+    curl \
+    gnupg \
+    ca-certificates
+
 RUN mkdir "/automation"
 
 # Install Chrome
