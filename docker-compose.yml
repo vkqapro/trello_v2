@@ -6,5 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pytest --version && pytest -m login"
+    command: /bin/sh -c "ls -ls && pip install chromedriver-autoinstaller selenium pyvirtualdisplay && pytest --version && pytest -m login"
     working_dir: /automation
