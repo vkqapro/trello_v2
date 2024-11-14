@@ -3,12 +3,13 @@ on: push
 jobs:
   Health_check:
     runs-on: ubuntu-latest
-    services:
-      selenium:
-        image: selenium/standalone-chrome
+#    services:
+#      selenium:
+#        image: selenium/standalone-chrome
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: Xotabu4/selenoid-github-actions@v2
+      - uses: actions/checkout@v4
 
       - name: Build Docker
         run: |
