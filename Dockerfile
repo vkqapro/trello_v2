@@ -1,5 +1,5 @@
 
-FROM python:3.12-slim-buster
+FROM python:3.12.0-alpine3.18
 
 RUN mkdir "/automation"
 # Set work directory
