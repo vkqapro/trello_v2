@@ -8,5 +8,6 @@ WORKDIR /automation
 # Install Python dependencies
 COPY ./ /automation
 RUN pip install --upgrade pip
-RUN python3 -m pip install .
 RUN pip install playwright pytest-playwright==0.5.2
+RUN python3 -m pip install .
+
