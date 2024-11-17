@@ -1,5 +1,5 @@
 # Start from a Python 3 Debian-based image
-FROM python:3.12.0-slim-buster
+FROM python:3.9.10-slim-buster
 
 RUN mkdir "/automation"
 
