@@ -1,10 +1,10 @@
 services:
   E2E:
-    image: python:3.8-buster
+    image: python:3.12-slim-buster
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pip install chromedriver-autoinstaller selenium pyvirtualdisplay && pytest --version && pytest -m login"
+    command: /bin/sh -c "ls -ls && playwright install && pytest -m tc100"
     working_dir: /automation
