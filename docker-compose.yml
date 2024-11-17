@@ -6,5 +6,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pytest -m tc101"
+    command: /bin/sh -c "ls -ls && playwright install-deps && pytest -m tc101"
     working_dir: /automation
