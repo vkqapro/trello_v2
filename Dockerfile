@@ -7,4 +7,5 @@ WORKDIR /automation
 
 # Install Python dependencies
 COPY ./ /automation
+RUN pip install --upgrade pip
 RUN python3 -m pip install .
