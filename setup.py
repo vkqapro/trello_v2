@@ -10,7 +10,6 @@ setup(
         'pytest==8.3.3',
         'requests==2.32.3',
         'setuptools==75.3.0',
-        'selenium==4.26.1',
-        'pytest-playwright==0.5.2'
+        'selenium==4.26.1'
     ]
 )
