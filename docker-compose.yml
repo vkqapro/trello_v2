@@ -1,10 +1,11 @@
 services:
   E2E:
-    image: python:3.12.0-slim-buster
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pytest -m tc100"
+    command:
+      /bin/ch -c "ls -ls && python -m tc100"
+
     working_dir: /automation
