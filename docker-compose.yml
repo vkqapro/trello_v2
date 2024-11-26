@@ -5,6 +5,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/ch -c "ls -ls && pytest -m tc100"
+    command: /bin/sh -c "ls -ls && pytest -m tc100"
 
     working_dir: /automation
